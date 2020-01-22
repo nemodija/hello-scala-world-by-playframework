@@ -28,3 +28,10 @@ sbt run
 ```sh
 sbt compile test
 ```
+
+## Startup by Docker Container
+
+```sh
+docker build -t hello-scala-world-by-playframework:latest .
+docker run -p 80:9000 -d -it --name app hello-scala-world-by-playframework:latest
+```
